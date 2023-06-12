@@ -20,7 +20,7 @@ const RepoList = ({nodes, loading, start, end}: IRepoList) => {
             <div className={styles.repo__wprapper}>
                 {loading && [... new Array(10)].map((_, i) => {
                 return (
-                    <Skeleton height={105} key={i}/>
+                    <Skeleton height={105} key={`skeleton-${i}`}/>
                 )
                 })}
 

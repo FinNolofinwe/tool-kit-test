@@ -79,3 +79,18 @@
         font-size: 1.125rem;
     }
 }
+
+@media (max-width: 414px) {
+
+    .pagination__list {
+        gap: 0.25rem;
+    }
+
+    .pagination__item {
+        padding: 0.375rem 0.3755rem;
+    }
+
+    .pagination__wrapper {
+        gap: 0.5rem;
+    }
+}
