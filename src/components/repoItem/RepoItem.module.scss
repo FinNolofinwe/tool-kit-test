@@ -1,0 +1,120 @@
+@import '../../styles/vars';
+
+.repo__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    div {
+        flex-direction: column;
+    }
+}
+
+.repo__name {
+    font-size: 1.25rem;
+    max-width: 15.625rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.repo__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    img {
+        display: block;
+        width: 1.25rem;
+        height: auto;
+        margin-right: 0.5rem;
+    }
+    span {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    margin-right: 2rem;
+}
+
+.link {
+    p {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        span {
+            margin-right: 0.5rem;
+            transition: $anim;
+            position: relative;
+            &::after {
+                content: '';
+                width: 0;
+                height: 1px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -3px;
+                background: #5c6bc0;
+                transition: $anim;
+            }
+            &:hover {
+                color: #5c6bc0;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+        img {
+            display: block;
+            width: 1.25rem;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .repo__name {
+        max-width: 14rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .repo__top {
+        flex-direction: column;
+        align-items: start;
+        div {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .repo__name {
+        max-width: 15rem;
+        padding-bottom: 0;
+    }
+
+    .repo__top {
+        flex-direction: row;
+        align-items: center;
+        div {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .repo__name {
+        max-width: 100%;
+        padding-bottom: 0.75rem;
+    }
+
+    .repo__top {
+        flex-direction: column;
+        align-items: start;
+        div {
+            flex-direction: row;
+        }
+    }
+}

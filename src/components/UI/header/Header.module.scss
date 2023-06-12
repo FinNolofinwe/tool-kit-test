@@ -1,0 +1,48 @@
+@import '../../../styles/vars';
+
+.header {
+    flex-shrink: 0;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid rgba(23, 42, 58, .1);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 3rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.header__name {
+    font-size: 1.5rem;
+    line-height: 100%;
+    color: $main-color
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 2.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .header__name {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        margin-right: 1rem;
+    }
+
+}

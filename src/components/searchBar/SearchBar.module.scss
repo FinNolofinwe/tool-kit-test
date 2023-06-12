@@ -1,0 +1,42 @@
+@import '../../styles/vars';
+
+.search__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.inp {
+    position: relative;
+    display: block;
+    padding: 0.625rem 0.625rem 0.625rem 2.5rem;
+    border: none;
+    border: 1.5px solid rgba(23,30,38,.2);
+    border-radius: 0.5rem;
+    color: #9e9e9e;
+    width: 30rem;
+    background-image: url(../../assets/search.svg);
+    background-position: 0.625rem center;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: $anim;
+    &:focus,
+    &:hover,
+    &:active {
+        outline: 0;
+        outline-offset: 0;
+    }
+}
+
+[type=search] {
+    cursor: pointer;
+}
+
+
+@media (max-width: 576px) {
+    .search__wrapper {
+        margin-bottom: 2rem;
+    }
+    .inp {
+        width: 100%;
+    }
+}

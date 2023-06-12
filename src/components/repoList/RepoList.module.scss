@@ -1,0 +1,31 @@
+@import '../../styles/vars';
+
+.repo__wprapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    justify-content: space-between;
+    a {
+        width: 49%;
+        transition: $anim;
+        cursor: pointer;
+        &:hover {
+            background-color: #fcf8f8;
+        }
+    }
+}
+
+.error {
+    display: block;
+   width: 40%;
+   height: auto;
+   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .repo__wprapper {
+        a {
+            width: 100%;
+        }
+    }
+}

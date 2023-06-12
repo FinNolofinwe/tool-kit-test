@@ -1,0 +1,20 @@
+.error {
+    width: 35vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .error {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .error {
+        width: 80vw;
+    }
+}
+

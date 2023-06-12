@@ -1,0 +1,17 @@
+@import '../../../styles/vars';
+
+.btn {
+    display: block;
+    background: transparent;
+    border: none;
+    border: 2px solid $main-color;
+    border-radius: 0.25rem;
+    padding: 0.625rem 1rem;
+    color: $main-color;
+    transition: $anim;
+    cursor: pointer;
+    &:hover {
+        color: white;
+        background: $main-color;
+    }
+}

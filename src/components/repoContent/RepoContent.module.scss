@@ -1,0 +1,87 @@
+.wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.owner {
+    text-align: center;
+}
+
+.owner__username {
+    font-size: 1.5rem;
+}
+
+.owner__userpic {
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1.5rem;
+}
+
+.repo {
+    width: 90%;
+}
+
+.repo__name {
+    margin-bottom: 1.25rem;
+}
+
+.repo__langs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.repo__info {
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+
+.repo__descr {
+    width: 75%;
+    line-height: 1.25;
+}
+
+@media (max-width: 768px) {
+    .repo {
+        width: 100%;
+    }
+
+    .repo__descr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .owner__userpic {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .repo__descr {
+        width: 100%;
+    }
+
+    .repo__info {
+        flex-direction: column;
+        div + div {
+            margin-top: 0.75rem;
+        }
+    }
+
+}
+
+@media (max-width: 375px) {
+    .repo__descr {
+
+        overflow: hidden;
+
+    }
+}

@@ -1,0 +1,38 @@
+.repo__date {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 1rem;
+        padding-right: 0.5rem;
+    }
+    p:first-child {
+        padding-bottom: 0.125rem;
+    }
+    p:last-child {
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1024px) {
+    .repo__date {
+        p:first-child {
+            padding-bottom: 0rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .repo__date {
+        p:first-child {
+            padding-bottom: 0.125rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .repo__date {
+        p:first-child {
+            padding-bottom: 0rem;
+        }
+    }
+}
