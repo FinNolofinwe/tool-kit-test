@@ -5,12 +5,13 @@ const httpLink = createHttpLink({
     uri: import.meta.env.VITE_API_URL,
 });
 
+
 const authLink = setContext((_, { headers }) => {
     
 return {
     headers: {
     ...headers,
-    authorization: `Bearer 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`,
+    authorization: `Bearer ${import.meta.env.VITE_TOKEN}`,
     accept: "application/json"
     }
 }

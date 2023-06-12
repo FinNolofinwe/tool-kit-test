@@ -7,6 +7,15 @@ import Error404 from '../../pages/404/404';
 
 function App() {
 
+  // fetch('https://api.github.com/rate_limit')
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data);
+  // })
+  // .catch(error => {
+  //   console.error(error);
+  // });
+
   return (
     <>
       <Header />
