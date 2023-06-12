@@ -18,4 +18,4 @@ export const useAccountStore = create<IAccountStore>((set) => ({
                 set({ repos, id, login, totalCount})
 }));
 
-const accSub = useAccountStore.subscribe((newState, oldState) => console.log(newState))
+// const accSub = useAccountStore.subscribe((newState) => console.log(newState))

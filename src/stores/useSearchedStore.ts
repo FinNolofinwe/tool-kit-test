@@ -14,4 +14,4 @@ export const useSearchedStore = create<ISearchedStore>((set) => ({
                 set({ nodes, totalCount }),
 }));
 
-const searchedSub = useSearchedStore.subscribe((newState, oldState) => console.log(newState))
+// const searchedSub = useSearchedStore.subscribe((newState) => console.log(newState))

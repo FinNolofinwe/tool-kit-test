@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 import { GET_VIEWER, GET_SEARCH_RESULT, GET_REPO } from '../queries';
-import { IQuery, ISearchResult, IParams, ICurrentRepo } from '../types';
+import { IQuery, ISearchResult, ICurrentRepo } from '../types';
 
 interface ISearchParams {
     query: string | null
@@ -22,7 +22,7 @@ export function useSearchQuery(query: string | null, count: number) {
 }
 
 export function useRepoQuery(owner: string, name: string) {
-    return useQuery<ICurrentRepo, IParams>(GET_REPO, {
+    return useQuery<ICurrentRepo>(GET_REPO, {
         variables: { owner, name}
     });
 }
